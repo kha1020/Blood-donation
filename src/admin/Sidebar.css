@@ -1,0 +1,131 @@
+.sidebar {
+  position: fixed;
+  top: 110px; /* Bắt đầu dưới 2 Header (50px + 60px) */
+  left: 0;
+  width: 250px; /* Chiều rộng Sidebar */
+  height: auto; /* Chiều cao Sidebar tự động theo nội dung */
+  max-height: calc(100vh - 110px - 50px); /* Tối đa chiều cao Sidebar bằng chiều cao màn hình trừ Header (50px + 60px) và Footer (50px) */
+  background-color: #2c3e50; /* Màu nền Sidebar */
+  color: white;
+  overflow-y: auto; /* Cuộn nội dung nếu vượt quá chiều cao tối đa */
+  z-index: 1000; /* Đảm bảo Sidebar hiển thị đúng thứ tự */
+  padding-top: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng Sidebar */
+}
+
+
+
+
+/* Style cho tiêu đề trong sidebar */
+.sidebar-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Liên kết trong sidebar */
+.sidebar-links {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.sidebar-links li {
+  margin: 10px 0;
+}
+
+/* Liên kết sidebar, thêm màu sắc khi active */
+.sidebar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 4px;
+}
+
+.sidebar-links a.active {
+  background-color: #555; /* Màu nền khi liên kết được chọn */
+}
+
+/* Style cho nút logout */
+.logout {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.logout button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px 20px;  /* Điều chỉnh padding để nút có kích thước hợp lý */
+  cursor: pointer;
+  width: 200px;  /* Giảm chiều rộng của nút */
+  font-size: 16px;
+  font-weight: bold;  /* Làm cho chữ đậm hơn */
+  border-radius: 25px;  /* Bo tròn góc để tạo cảm giác mềm mại */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Thêm bóng nhẹ cho nút */
+  transition: background-color 0.3s, transform 0.2s;  /* Thêm hiệu ứng mượt mà */
+}
+
+.logout button:hover {
+  background-color: #e43a3a;
+  transform: translateY(-3px);  /* Đẩy nút lên khi hover */
+}
+
+.logout button:active {
+  transform: translateY(1px);  /* Nút sẽ di chuyển xuống khi nhấn */
+}
+
+/* Style cho popup xác nhận đăng xuất */
+.logout-confirmation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.confirmation-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Các nút trong confirmation-buttons */
+.confirmation-buttons {
+  display: flex;  /* Sử dụng flexbox để các nút nằm trên cùng một hàng */
+  justify-content: center;  /* Căn giữa các nút */
+  gap: 10px;  /* Khoảng cách giữa các nút */
+}
+
+.confirmation-buttons button {
+  margin: 0;  /* Bỏ margin vì chúng ta dùng gap */
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  width: 120px;  /* Cố định chiều rộng cho nút */
+}
+
+.confirmation-buttons button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.confirmation-buttons button:first-child:hover {
+  background-color: #45a049;
+}
+
+.confirmation-buttons button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirmation-buttons button:last-child:hover {
+  background-color: #e53935;
+}

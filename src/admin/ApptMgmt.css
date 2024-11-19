@@ -1,0 +1,77 @@
+/* Tổng thể */
+.appt-mgmt-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.appt-mgmt-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Bảng */
+.appt-mgmt-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.appt-mgmt-table th,
+.appt-mgmt-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.appt-mgmt-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.appt-mgmt-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.appt-mgmt-empty {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Nút hành động */
+.appt-mgmt-btn {
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

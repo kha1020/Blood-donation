@@ -1,0 +1,47 @@
+.blood-recipient-mgmt {
+    padding: 20px;
+  }
+  
+  .recipient-form, .recipient-list, .emergency-requests, .blood-bank-status {
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  input[type="text"], select {
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  span {
+    color: red;
+    font-weight: bold;
+  }
+  

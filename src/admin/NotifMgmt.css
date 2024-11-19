@@ -1,0 +1,59 @@
+/* Container căn giữa toàn màn hình */
+.notif-mgmt-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9; /* Màu nền nhẹ */
+    box-sizing: border-box;
+  }
+  
+  /* Form chứa textarea và button */
+  .notif-mgmt-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    width: 100%;
+    max-width: 400px; /* Giới hạn chiều rộng */
+  }
+  
+  /* Textarea */
+  .notif-textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button */
+  .notif-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notif-button:hover {
+    background-color: #0056b3;
+  }
+  /* Dropdown (select) */
+.notif-select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+  }
+  

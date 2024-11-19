@@ -1,0 +1,20 @@
+/* admin.css */
+.admin-container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 250px; /* Đảm bảo có đủ không gian cho sidebar */
+  padding: 20px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}

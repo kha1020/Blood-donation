@@ -1,0 +1,200 @@
+/* AccountMgmt.css */
+
+/* Container cho toàn bộ trang quản lý tài khoản */
+.account-mgmt-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Phần tử nội dung chính */
+.content-section {
+  margin-bottom: 30px;
+}
+
+/* Tiêu đề của từng section */
+.content-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Đoạn văn trong các section */
+.content-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Button thêm tài khoản */
+.account-mgmt-container .add-account-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.account-mgmt-container .add-account-button:hover {
+  background-color: #45a049;
+}
+
+/* Bảng tài khoản */
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.accounts-table th, .accounts-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.accounts-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.accounts-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Nút chỉnh sửa và xóa tài khoản */
+.account-mgmt-container .edit-button,
+.account-mgmt-container .delete-button {
+  padding: 8px 16px; /* Tăng kích thước nút */
+  font-size: 1rem; /* Kích thước chữ vừa phải */
+  border: none;
+  border-radius: 4px; /* Làm bo góc nhẹ */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+  display: inline-block;
+  margin: 5px; /* Cách đều các nút */
+}
+
+/* Nút chỉnh sửa */
+.account-mgmt-container .edit-button {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.account-mgmt-container .edit-button:hover {
+  background-color: #f39c12;
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Nút xóa */
+.account-mgmt-container .delete-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.account-mgmt-container .delete-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+
+/* Form chỉnh sửa quyền */
+.account-mgmt-container .permissions-form,
+.account-mgmt-container .edit-account-form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Các nhóm form bên trong Permissions và Edit Account */
+.permissions-form .form-group,
+.edit-account-form .form-group {
+  margin-bottom: 15px;
+}
+
+.permissions-form input[type="checkbox"],
+.edit-account-form input,
+.edit-account-form select {
+  margin-right: 10px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Nút lưu và hủy trong các form */
+.permissions-form .save-button,
+.edit-account-form .save-button,
+.permissions-form .cancel-button,
+.edit-account-form .cancel-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.permissions-form .save-button,
+.edit-account-form .save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.permissions-form .save-button:hover,
+.edit-account-form .save-button:hover {
+  background-color: #45a049;
+}
+
+.permissions-form .cancel-button,
+.edit-account-form .cancel-button {
+  background-color: #ccc;
+  color: black;
+}
+
+.permissions-form .cancel-button:hover,
+.edit-account-form .cancel-button:hover {
+  background-color: #bbb;
+}
+
+/* Modal xác nhận xóa */
+.delete-confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-confirmation button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-confirmation .cancel-delete-button {
+  background-color: #2196F3;
+}
+
+.delete-confirmation h2 {
+  color: white;
+  margin-bottom: 20px;
+}
