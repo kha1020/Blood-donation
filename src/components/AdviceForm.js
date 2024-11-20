@@ -7,7 +7,8 @@ const AdviceForm = () => {
       <h2>Những lời khuyên trước và sau khi hiến máu</h2>
 
       <div className="advice-container">
-        <div className="advice-section left">
+        {/* Phần Không nên */}
+        <div className="advice-section">
           <h3>Không nên:</h3>
           <ul>
             <li className="should-not">Uống sữa, rượu bia trước khi hiến máu.</li>
@@ -15,23 +16,25 @@ const AdviceForm = () => {
           </ul>
           <p>Bác sĩ Ngô Văn Tân</p>
           <p>Trưởng khoa Khoa Tiếp nhận hiến máu, Bệnh viện Truyền máu Huyết học</p>
+        </div>
 
+        {/* Phần Lưu ý */}
+        <div className="advice-section">
           <h3>Lưu ý:</h3>
           <ul>
-            <li className="note">
-              Nếu phát hiện chảy máu tại chỗ chích:
-              <ul>
-                <li className="note">Giơ tay cao.</li>
-                <li className="note">Lấy tay kia ấn nhẹ vào miếng bông hoặc băng dính.</li>
-                <li className="note">Liên hệ nhân viên y tế để được hỗ trợ khi cần thiết.</li>
-              </ul>
-            </li>
+            <li className="note">Nếu phát hiện chảy máu tại chỗ chích:</li>
+            <ul>
+              <li className="note">Giơ tay cao.</li>
+              <li className="note">Lấy tay kia ấn nhẹ vào miếng bông hoặc băng dính.</li>
+              <li className="note">Liên hệ nhân viên y tế để được hỗ trợ khi cần thiết.</li>
+            </ul>
           </ul>
           <p>Bác sĩ Ngô Văn Tân</p>
           <p>Trưởng khoa Khoa Tiếp nhận hiến máu, Bệnh viện Truyền máu Huyết học</p>
         </div>
 
-        <div className="advice-section right">
+        {/* Phần Nên */}
+        <div className="advice-section">
           <h3>Nên:</h3>
           <ul>
             <li className="should">Ăn nhẹ và uống nhiều nước (300-500ml) trước khi hiến máu.</li>

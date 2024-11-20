@@ -1,5 +1,5 @@
 .advice-form {
-    background-color: #f9f9f9; /* Nền màu sáng */
+    background-color: #007bff; /* Nền màu sáng */
     padding: 20px;
     margin: 20px; /* Cách lề */
     border-radius: 8px; /* Bo tròn góc */
@@ -8,7 +8,8 @@
 
 .advice-form h2 {
     text-align: center; /* Căn giữa tiêu đề chính */
-    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    margin-bottom: 20px;
+    color: white; 
 }
 
 .advice-container {
