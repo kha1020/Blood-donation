@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBell, FaCog, FaUser, FaSignInAlt } from 'react-icons/fa';
+import { FaBell, FaUser, FaSignInAlt } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../context/UserContext';
 import logo2 from '../images/ctd.png';
@@ -71,9 +71,7 @@ const ProfilePage = () => {
                     <li onClick={() => navigate('/personal-info')}> {/* Điều hướng */} 
                       <FaUser style={{ marginRight: '10px' }} /> Thông tin cá nhân
                     </li>
-                    <li onClick={() => alert('Thiết lập cá nhân')}>
-                      <FaCog style={{ marginRight: '10px' }} /> Thiết lập cá nhân
-                    </li>
+                 
 
                     <Logout />
                   </ul>

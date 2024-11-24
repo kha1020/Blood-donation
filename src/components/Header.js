@@ -23,10 +23,10 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/history" activeClassName="active">
-                  Lịch sử đặt hẹn
-                </NavLink>
-              </li>
+            <NavLink to="/events" activeClassName="active">
+              Sự kiện
+            </NavLink>
+          </li>
               <li>
                 <NavLink to="/certificate" activeClassName="active">
                   Chứng nhận
@@ -34,6 +34,7 @@ const Header = () => {
               </li>
             </>
           )}
+        
           <li>
             <NavLink to="/faq" activeClassName="active">
               Hỏi - Đáp

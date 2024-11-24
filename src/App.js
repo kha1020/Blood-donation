@@ -6,7 +6,7 @@ import Certificate from './components/Certificate';
 import Footer from './components/Footer';
 import ForgotPassword from './components/ForgotPassword';
 import Header from './components/Header';
-import History from './components/History';
+
 import Login from './components/Login';
 import ProfilePage from './components/ProfilePage';
 import Register from './components/Register';
@@ -17,6 +17,12 @@ import Info from './pages/Info';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
 import PersonalInfoPage from './pages/PersonalInfoPage';
+
+
+import EventsPage from './pages/EventsPage';
+import EventDetailPage from './pages/EventDetailPage';
+
+
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -53,10 +59,12 @@ function App() {
           <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/info" element={<Info />} />
           <Route path="/appointment" element={<Appointment />} />
-          <Route path="/history" element={<History />} />
           <Route path="/certificate" element={<Certificate />} />
-        
           <Route path="/personal-info" element={<PersonalInfoPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/events/:id" element={<EventDetailPage />} />
+
+
 
           {/* Admin routes */}
           <Route path="/admin" element={<Admin><Dashboard /></Admin>} />
